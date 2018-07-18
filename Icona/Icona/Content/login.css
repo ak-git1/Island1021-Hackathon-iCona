@@ -1,0 +1,45 @@
+﻿.loginBar
+{
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 550px;
+    padding-top: 150px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px auto;
+    height: 100%;    
+}
+
+.loginBorder 
+{
+    margin-left: 24px; 
+    margin-right: 22px; 
+    border: 1px solid silver;
+}
+
+.login-container
+{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.login-container .textbox
+{
+    text-align: left;
+    width: 300px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.login-container .button
+{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.login-action
+{
+    margin-right: 10px;
+}

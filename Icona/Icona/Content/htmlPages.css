@@ -1,0 +1,6 @@
+﻿#htmlPanelContainer div { position: absolute; }
+#htmlPanelContainer span { position: absolute; white-space: nowrap; color: #000000; font-size: 12pt; unicode-bidi: bidi-override; }
+#htmlPanelContainer img { position: absolute; }
+#htmlPanelContainer .page { position: relative;border: solid 1pt black;margin: 10pt auto 10pt auto; overflow: hidden; }
+#htmlPanelContainer .text1 { font-family: Calibri;font-style: normal;font-weight: normal; }
+#htmlPanelContainer .text2 { font-family: Calibri;font-style: normal;font-weight: bold; }

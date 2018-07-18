@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  
+  <siteMapNode url="~/Pages/Main.aspx" title="Главное меню">
+
+    <siteMapNode  title="Сообщества" icon="/images/menu/communities_{0}.png" url="~/Pages/Communities.aspx"
+                  description="Просмотр и управление сообществами.">
+    </siteMapNode>
+    
+    <siteMapNode  title="Администрирование" icon="/images/menu/administration_{0}.png" url="~/Pages/Administration/Administration.aspx"    
+                  description="Управление пользователями системы. Управление настройками системы.">
+      <siteMapNode  url="~/Pages/Administration/UsersRegistry.aspx" title="Пользователи" icon="/images/menu/users_{0}.png"
+                    description="Управление пользователями системы. Создание учетных записей. Разграничение прав доступа." />    
+    </siteMapNode>
+
+  </siteMapNode>
+  
+</siteMap>

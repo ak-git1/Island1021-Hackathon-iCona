@@ -1,0 +1,39 @@
+﻿.webMessageBox-spacer
+{
+    height: 1px;
+    clear: both;
+}
+
+.webMessageBox-space
+{
+    padding: 20px;
+}
+
+.webMessageBox-ico
+{
+    width: 100px;
+    float: left;
+}
+
+.webMessageBox-txt
+{
+    width: calc(100% - 100px);
+    float: right;
+}
+
+.webMessageBox-txt-left
+{
+    margin-top: 15px;
+    width: 400px;
+}
+
+.webMessageBox-buttonBox
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.webMessageBox-button
+{
+    min-width: 90px;
+}

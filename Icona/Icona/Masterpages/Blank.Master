@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blank.master.cs" Inherits="Icona.Masterpages.Blank" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">  
+    <link href="/Content/themes/base/all.css" rel="Stylesheet" type="text/css" />
+    <link href="/Content/common.css" rel="Stylesheet" type="text/css" />  
+    <asp:ContentPlaceHolder ID="Styles" runat="server" />
+    <script src="/Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server" />
+</head>
+<body>
+<form id="first" runat="server">
+    <div>        
+        <telerik:RadScriptManager ID="ScriptManager" runat="server" AsyncPostBackTimeout="36000" EnableScriptGlobalization="true" EnableScriptLocalization="true" EnableHistory="true" />
+        <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>
+

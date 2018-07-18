@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Icona.Masterpages.Menu" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Styles" runat="server">  
+    <asp:ContentPlaceHolder ID="Styles" runat="server" > 
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Scripts" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="HeaderStylePlaceHolder" runat="server" >    
+        <div class="main-container">
+            <h1>
+                <asp:ContentPlaceHolder ID="HeaderPlaceHolder" runat="server" />
+            </h1>
+            <div class="grid-container">
+                <div class="menu-container header">
+                </div>
+            </div>
+        </div>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="BottomScripts" runat="server">
+</asp:Content>

@@ -1,0 +1,774 @@
+﻿* {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+}
+
+html {
+    overflow: auto !important;
+    overflow: hidden;
+}
+
+body {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1281px) 
+{
+ #container {
+   display: inline-block;
+   min-width: 1250px;
+   width: auto !important;
+   padding: 3px;
+}
+}
+@media screen and (max-width: 1025px) {
+ #container {
+   display: inline-block;
+   min-width: 1000px;
+   width: auto !important;
+   padding: 3px;
+}
+}
+
+form, body, html {
+    width: auto;
+}
+
+
+#container {
+    width: 100%;
+}
+
+.bordered-control {
+    border: 1px silver;
+}
+
+fieldset {
+    border: 1px silver;
+}
+
+    fieldset.groupbox {
+        border: 1px solid silver;
+    }
+
+img {
+    border: none;
+}
+
+a {
+    color: #005384;
+}
+
+    a.action-link {
+        text-decoration: none !important; 
+    }
+
+input.button {
+    height: 28px;
+    border-style: solid;
+    padding: 5px;
+    border-width: 1px;
+    border-color: gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
+    background-color: #F0F0F1;
+}
+
+    input.button:hover {
+        background-color: lightgray;
+    }
+
+hr {
+    height: 1px;
+}
+
+.wide {
+    width: 100%;
+}
+
+.per-field-agreement-in-line {
+  display: inline-block;
+}
+.wide-half {
+    width: 50%;
+}
+
+.no-border {
+    border: 0px;
+}
+
+.c {
+    text-align: center;
+}
+
+.l {
+    text-align: left;
+}
+
+.r {
+    text-align: right;
+}
+
+.t {
+    vertical-align: top;
+}
+
+.b {
+    vertical-align: bottom;
+}
+
+.m {
+    vertical-align: middle;
+}
+
+.height-auto {
+    height: auto !important;
+}
+
+.padding-3px {
+    padding: 3px;
+}
+
+.padding-5px {
+    padding: 5px;
+}
+
+.padding-10px {
+    padding: 10px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-row {
+    display: table-row;
+}
+
+.display-table-cell {
+    display: table-cell;
+}
+
+div.popup {
+    display: none;
+}
+
+div.clear {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    display: block;
+}
+
+.odd {
+    background-color: #F0F0F0;
+}
+
+.error {
+    width: 200px;
+    font-style: italic;
+    color: Red;
+}
+
+.description {
+    font-size: smaller;
+}
+
+.comment {
+    font-size: smaller;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.green-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.red-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.all-textbox {
+    border-style: solid;
+    padding: 1px;
+    background-color: white;
+    height: 20px;
+    border-width: 1px;
+    border-color: gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.all-multilinetextbox {
+    border-style: solid;
+    padding: 1px;
+    background-color: white;
+    border-width: 1px;
+    border-color: gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
+    overflow-x: hidden;
+}
+
+.all-list {
+    border-style: solid;
+    padding: 1px;
+    background-color: white;
+    height: 23px;
+    border-width: 1px;
+    border-color: gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+span.required {
+    color: Red;
+}
+
+span.hidden {
+    display: none;
+}
+
+div.table {
+    width: 100%;
+    display: block;
+}
+
+    div.table div.row {
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-left: auto;
+        width: 100%;
+        display: block;
+    }
+
+        div.table div.row div.header {
+            border-bottom: 1px solid #acacac;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            width: 98%;
+            color: #003554;
+            font-size: 1.1em;
+        }
+
+        div.table div.row div.cell1 {
+            border: none;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            width: 35%;
+            display: block;
+            padding-top: 2px;
+        }
+
+        div.table div.row div.cell2 {
+            border-style: none;
+            float: right;
+            margin: 0px;
+            padding: 0px;
+            width: 65%;
+            display: block;
+        }
+
+        div.table div.row div.cell4 {
+            border-style: none;
+            float: right;
+            margin: 0px;
+            padding: 0px;
+            width: 10%;
+            display: block;
+        }
+
+        div.table div.row div.cell5 {
+            border-style: none;
+            float: right;
+            margin: 0px;
+            padding: 0px;
+            display: block;
+        }
+
+        div.table div.row div.cell3 {
+            border-style: none;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            width: 90%;
+            display: block;
+        }
+
+        div.table div.row div.cell2 a {
+            color: #005384;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        div.table div.row div.cell2 input.textbox {
+            width: 94%;
+            border-style: solid;
+            padding: 1px;
+            height: 20px;
+            border-width: 1px;
+            border-color: gray;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -khtml-border-radius: 4px;
+        }
+
+        div.table div.row div.cell2 textarea.textbox {
+            width: 94%;
+            padding: 1px;
+            border-style: solid;
+            background-color: white;
+            height: 20px;
+            border-width: 1px;
+            border-color: gray;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -khtml-border-radius: 4px;
+        }
+
+        div.table div.row div.cell2 input.date {
+            width: 85px;
+        }
+
+        div.table div.row div.cell2 select.list {
+            border-style: solid;
+            padding: 1px;
+            background-color: white;
+            height: 23px;
+            border-width: 1px;
+            border-color: gray;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -khtml-border-radius: 4px;
+        }
+
+.login {
+    vertical-align: top;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 50px;
+}
+
+.logo {
+    padding-bottom: 3px;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.logo-right {
+    padding-right: 10px;
+}
+
+ul.withoutBullets {
+    margin: 0;
+    padding: 5px;
+}
+
+    ul.withoutBullets li {
+        list-style-type: none;
+        margin-bottom: 5px;
+    }
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.top-bottom-margin {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+table .menu-table {
+    width: 100%;
+}
+
+    table.menu-table td.menu-panel {
+        width: 200px;
+    }
+
+table.with-menu td.content-panel {
+    width: auto;
+}
+
+div.main-container {
+    width: auto;
+}
+
+    div.main-container h1 {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: #003554;
+        margin: 5px;
+    }
+
+    div.main-container h3 {
+        font-size: 1.0em;
+        font-weight: normal;
+        color: #003554;
+        margin: 5px;
+    }
+
+    div.main-container .headerText {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: #003554;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    div.main-container h1 span, div.main-container h1 a {
+        font-size: 1.0em;
+        font-weight: normal;
+        color: #003554;
+        margin: 0px;
+    }
+
+    div.main-container h3 span, div.main-container h2 a {
+        font-size: 1.0em;
+        font-weight: normal;
+        color: #003554;
+        margin: 0px;
+    }
+
+    div.main-container h1 a {
+        text-decoration: underline;
+    }
+
+.tree td div {
+    height: 20px !important;
+}
+
+.tree a.selected {
+    background-color: #0069b9;
+    color: white;
+    padding: 3px 7px 3px 7px;
+    text-decoration: none;
+}
+
+.hidden-text label {
+    display: none;
+}
+
+/* Закругленные углы для элемента */
+
+.rounded {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -khtml-border-radius: 6px;
+}
+
+.rounded-bottom {
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -khtml-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -khtml-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Закругленные углы для элемента (конец) */
+
+.customValidatorCalloutStyle div, .customValidatorCalloutStyle td {
+    border: solid 1px black;
+    background-color: #D6EAFA;
+    z-index: 100002 !important;
+}
+
+.errorBackground {
+    background: pink !important;
+}
+
+.spin-border {
+    border-style: solid;
+    background-color: white;
+    height: 23px;
+    border-width: 1px;
+    border-color: gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.return-link
+{
+    color: #005384;
+    text-decoration: none;    
+}
+
+.text-right-align {
+    text-align: right;
+}
+
+/* Top menu */
+.menuBar {
+    font-weight: bold;
+    font-size: small;
+    margin: 0px auto;
+    margin-top: 2px;
+    width: 100%;
+}
+
+    .menuBar .lBar {
+        background: url('/Images/menuBarL_6x31.gif') no-repeat left top;
+        height: 31px;
+        z-index: -10;
+    }
+
+    .menuBar .rBar {
+        background: url('/Images/menuBarR_6x31.gif') no-repeat right top;
+        height: 31px;
+        z-index: -10;
+    }
+
+    .menuBar .mBar {
+        background-position: 50% top;
+        padding-right: 0px;
+        padding-left: 0px;
+        background: url('/Images/menuBarM_1x31.gif') repeat-x 50% top;
+        padding-bottom: 0px;
+        margin: 0px 6px;
+        padding-top: 0px;
+        height: 31px;
+        z-index: -10;
+    }
+
+.menuBar .RadMenu ul.rmRootGroup.rmHorizontal {
+    line-height: normal;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    position: static;
+}
+
+.menuBar .RadMenu {
+    border: 0 none;
+    padding: 2px;
+    position: relative;
+    z-index: 1001 !important;
+}
+
+    .menuBar .RadMenu li.rmItem, .RadMenu_Context li.rmItem {
+        background-color: #FFF;
+        border: 0 none;
+    }
+
+        .menuBar .RadMenu li.rmItem a, .RadMenu_Context li.rmItem a {
+            cursor: auto;
+            line-height: 13px;
+            padding-bottom: 4px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 3px;
+            text-decoration: none;
+            border: 1px solid #FFF;
+        }
+
+            .menuBar .RadMenu li.rmItem a.rmFocused, .RadMenu_Context li.rmItem a.rmFocused {
+                border: 1px solid #888;
+            }
+
+            .menuBar .RadMenu li.rmItem a:hover, .RadMenu_Context li.rmItem a:hover {
+                border: 1px solid #888;
+                background-color: #CBCBCB;
+            }
+
+            .menuBar .RadMenu li.rmItem a span.rmText, .RadMenu_Context li.rmItem a span.rmText {
+                padding: 2px 0;
+                text-decoration: none;
+                vertical-align: middle;
+            }
+
+        .menuBar .RadMenu li.rmItem.rmSeparator, .RadMenu_Context li.rmItem.rmSeparator {
+            padding: 5px;
+            border: 0 none;
+        }
+
+            .menuBar .RadMenu li.rmItem.rmSeparator span.rmText, .RadMenu_Context li.rmItem.rmSeparator span.rmText {
+                background-color: #ACACAC;
+                display: block;
+                float: left;
+                font-size: 0;
+                line-height: 0;
+                padding: 0;
+                margin: 0;
+                border: 0 none;
+                height: 17px;
+                width: 1px;
+            }
+
+    .menuBar .RadMenu .rmSlide, .RadMenu_Context {
+        background-color: #FFF;
+        -webkit-border-horizontal-spacing: 0;
+        -webkit-border-vertical-spacing: 0;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px 0;
+        padding: 1px;
+        border: 1px solid #666;
+        overflow: visible;
+        width: auto !important;
+    }
+
+        .menuBar .RadMenu .rmSlide ul.rmVertical, .RadMenu_Context ul.rmVertical {
+            padding: 0 !important;
+            margin: 0 !important;
+            -webkit-background-size: 30px 1px;
+            /*background-image: url(/Images/menu/item_background.png);*/
+            background-position: 0 0;
+            /*background-repeat: repeat-y;
+            background-size: 30px 1px;*/
+            float: none;
+        }
+
+            .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem, .RadMenu_Context ul.rmVertical li.rmItem {
+                height: auto;
+                padding: 0;
+                border: 1px solid rgba(0, 0, 0, 0);
+                width: auto !important;
+                float: none;
+                background-color: transparent;
+            }
+
+                .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem:hover, .RadMenu_Context ul.rmVertical li.rmItem:hover {
+                    border: 1px solid #888;
+                    background-color: #F2F2F2;
+                }
+
+                .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem a, .RadMenu_Context ul.rmVertical li.rmItem a {
+                    background-color: transparent;
+                    padding-bottom: 4px;
+                    padding-left: 2px;
+                    padding: 0;
+                    width: auto !important;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                }
+
+                .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem a {
+                    padding-top: 3px;
+                }
+
+                    .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem a span.rmText {
+                        display: block;
+                        padding: 7px 31px 7px 0;
+                        margin: 0 4px 0 31px;
+                    }
+
+                .RadMenu_Context ul.rmVertical li.rmItem a span.rmText {
+                    display: block;
+                    padding: 4px 10px 4px 0;
+                    margin: 0 4px 0 5px;
+                    color: buttontext;
+                }
+
+                    .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem a span.rmText.rmExpandRight, .RadMenu_Context ul.rmVertical li.rmItem a span.rmText.rmExpandRight {
+                        background-image: url(/Images/menu/item_expand_right.png);
+                        background-position: 100% 50%;
+                        background-repeat: no-repeat;
+                    }
+
+                .menuBar .RadMenu .rmSlide ul.rmVertical li.rmItem a img, .RadMenu_Context ul.rmVertical li.rmItem a img {
+                    display: inline-block;
+                    position: static;
+                    margin: 0 12px 0 0;
+                }
+
+/* end Top menu */
+
+/* Классы для бейджиков */
+
+.ui-button-badge {
+    background: #BA070F;
+    color: #fff;
+    padding: 1px 4px;
+    position: absolute;
+    right: -7px;
+    top: -5px;
+    z-index: 999;
+    border-radius: .8em;
+    border: 1px solid #7c2b2f;
+    font-size: xx-small;
+    display: none;
+}
+
+.filter-badge, .discussion-badge, .badge {
+    background: #BA070F;
+    color: #fff;
+    padding: 1px 7px;
+    position: absolute;
+    right: -2px;
+    top: -10px;
+    z-index: 1;
+    border-radius: .8em;
+    border: 1px solid #7c2b2f;
+    font-size: xx-small;
+    display: none;
+}
+
+.filter-bage-visible, .discussion-bage-visible, .badge-visible {
+    display: inline;
+}
+
+/* Классы для бейджиков (конец) */
+
+/* Табы */
+
+.RadMultiPage {
+    border: 1px solid #A8A8A8;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 11px;
+    clear: left;
+    float: none;
+    zoom: 1;
+}
+
+/* Табы (конец) */

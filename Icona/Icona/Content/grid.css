@@ -1,0 +1,152 @@
+﻿div.grid-container
+{
+	width: auto;
+	margin: 0px 3px;
+}
+
+div.grid-container div.menu-container
+{
+	width: 100%;
+	background-color: #dde3e4;
+}
+
+div.grid-container div.header, div.table div.row div.menu-container.header 
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0;
+	border: 0 none;
+	border-top: 1px solid #acacac;
+}
+
+div.grid-container div.footer, div.table div.row div.menu-container.footer
+{
+	width: 100%;
+	height: 0px;
+	border-top: 2px solid #87a1b9;
+}
+
+div.grid-container div.menu-container div.buttons
+{
+	min-height: 33px;
+	float: left;
+	padding: 5px;
+}
+
+div.grid-container div.menu-container div.info
+{
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+	padding: 5px;
+}
+
+div.grid-container div.menu-container div.info-right
+{
+	margin-top: 10px;
+	margin-left: 5px;
+	float: right;
+	padding: 5px;
+}
+
+div.grid-container div.menu-container div.filterpanel
+{
+	float: left;
+	height:0;
+	overflow:hidden;
+}
+
+div.grid-container div.menu-container div.navigation
+{
+	float: right;
+	padding: 5px;
+}
+
+div.grid-container .grid-view {
+	width: 100%;
+	border: none;
+}
+
+div.grid-container .grid-view th
+{
+	padding: 2px;
+	background-color: #d6eafa;
+	color: #003554;
+}
+
+.grid-view-footer
+{
+	padding: 2px;
+	background-color: #d6eafa;
+	color: #003554;
+	text-align: right;
+}
+
+div.grid-container .grid-view tr
+{
+	height: 28px;
+}
+
+div.grid-container .grid-view td
+{
+	padding: 2px;
+	border-left: 1px solid #fff;
+}
+
+div.grid-container .grid-view td div.icon
+{
+	padding-right: 5px;
+	float: left;
+}
+
+div.grid-container .grid-view td span.number
+{
+	color: #267F00;
+	padding-bottom: 4px;
+	padding-right: 5px;
+}
+
+div.grid-container .grid-view td span.name
+{
+	color: #003554;
+}
+
+.dx-grid-header
+{
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 5px 6px;
+	border: 1px solid #8ba0bc;
+	background-color: #D6EAFA;
+	text-align: center;
+	color: #003554;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0px;
+}
+
+.dx-grid-cell
+{
+	padding: 2px;
+	border-left: 1px solid #fff;
+}
+
+body table.grid-net {
+	width: 100%;
+	border: 0 none;
+}
+
+body table.grid-net td, .RadScheduler table.grid-net td, div.grid-container .grid-view table.grid-net td {   
+	border: 0 none;
+	padding: 1px 2px;
+}
+
+.RadScheduler table.grid-net th {
+	color: #003554;
+	font-weight: bold; 
+}
+
+td.center {
+	text-align: center;
+}

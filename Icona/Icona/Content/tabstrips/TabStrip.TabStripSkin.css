@@ -1,0 +1,221 @@
+﻿.RadTabStrip_TabStripSkin {
+    color:black;
+    font:12px "Segoe UI",Arial,Helvetica,sans-serif;
+    line-height:26px
+}
+.RadTabStrip_TabStripSkin .rtsGhostTab {
+     border-color:#262626;
+     border-radius:5px;
+     color:black;
+     background-color:#949494
+}
+.RadTabStrip_TabStripSkin .rtsLevel {
+     background-color:#a2a1a2
+}
+.RadTabStrip_TabStripSkin .rtsLevel.rtsLevel1 {
+     color:black;
+     background-color:transparent
+}
+.RadTabStrip_TabStripSkin .rtsLevel.rtsLevel2,.RadTabStrip_TabStripSkin .rtsLevel.rtsLevel3,.RadTabStrip_TabStripSkin .rtsLevel.rtsLevel4,.RadTabStrip_TabStripSkin .rtsLevel.rtsLevel5 {
+    background-image:url('TabStrip/Level2Bg.png');
+    background-repeat:repeat-x
+}
+.RadTabStrip_TabStripSkin .rtsLevel .rtsLink:hover {
+    text-decoration:underline
+}
+.RadTabStrip_TabStripSkin .rtsLevel .rtsSelected,.RadTabStrip_TabStripSkin .rtsLevel .rtsSelected:hover {
+    text-decoration:underline
+}
+.RadTabStrip_TabStripSkin .rtsLI {
+    color:black;
+    font-weight:normal;
+    font-size:12px;
+    line-height:26px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+.RadTabStrip_TabStripSkin .rtsLink {
+    background-image:none;
+    color:black;
+    font-weight:normal;
+    font-size:12px;
+    line-height:26px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+.RadTabStrip_TabStripSkin .rtsOut {
+    background-image:none
+}
+.RadTabStrip_TabStripSkin .rtsDisabled {
+    color:#9f9f9f
+}
+.RadTabStrip_TabStripSkin .rtsDisabled:hover {
+     background-position:0 0
+}
+.RadTabStrip_TabStripSkin .rtsDisabled:hover .rtsOut {
+    background-position:100% 0
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 {
+    background-image:url('TabStrip/TabStripStates.png');
+    background-position:0 100%;
+    background-repeat:repeat-x
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsLink {
+    background-image:url('TabStrip/TabStripStates.png');
+    background-position:0 0;
+    
+    color:black
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsLink {
+    background-position:0 -52px;
+    text-decoration:none
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsOut {
+    background-image:url('TabStrip/TabStripStates.png');
+    background-position:100% 0
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsLink .rtsOut {
+    background-position:100% -52px
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsSelected,.RadTabStrip_TabStripSkin .rtsLevel1 .rtsSelected:hover {
+    color:white;text-decoration:none;background-position:0 -26px
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsSelected .rtsOut,.RadTabStrip_TabStripSkin .rtsLevel1 .rtsSelected:hover .rtsOut {
+    background-position:100% -26px
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsDisabled {
+    color:#9f9f9f
+}.RadTabStrip_TabStripSkin .rtsLevel1 .rtsDisabled:hover {
+    background-position:0 0
+}
+.RadTabStrip_TabStripSkin .rtsLevel1 .rtsDisabled:hover .rtsOut {
+   background-position:100% 0
+}
+.RadTabStrip_TabStripSkin .rtsLevel2 {
+   background-position:0 0
+}
+.RadTabStrip_TabStripSkin .rtsLevel3 {
+   background-position:0 -27px
+}
+.RadTabStrip_TabStripSkin .rtsLevel4 {
+   background-position:0 -54px
+}
+.RadTabStrip_TabStripSkin .rtsLevel5 {
+   background-position:0 -81px
+}
+.RadTabStrip_TabStripSkin .rtsNextArrow,.RadTabStrip_TabStripSkin .rtsPrevArrow,.RadTabStrip_TabStripSkin .rtsPrevArrowDisabled,.RadTabStrip_TabStripSkin .rtsNextArrowDisabled {
+    background-image:url('TabStrip/TabStripStates.png')
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel.rtsLevel2,.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel.rtsLevel3,.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel.rtsLevel4,.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel.rtsLevel5 {
+    background-image:none
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsSeparator {
+    background:#6f6f6f
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsOut {
+    background-image:none
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel1 {
+    background-image:none
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel1 .rtsLink {
+    background-image:url('TabStrip/TabStripVStates.png');*zoom:1
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel2 {
+    background-image:none
+}
+.RadTabStrip_TabStripSkin.RadTabStripVertical .rtsLevel3 {
+    background-image:none
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel {
+    background-position:0 -599px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel.rtsLevel2,.RadTabStripBottom_TabStripSkin .rtsLevel.rtsLevel3,.RadTabStripBottom_TabStripSkin .rtsLevel.rtsLevel4,.RadTabStripBottom_TabStripSkin .rtsLevel.rtsLevel5 {
+    background-image:none
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsLink {
+    background-position:0 -130px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsLink:hover {
+    background-position:0 -182px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsOut {
+    background-position:100% -130px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsLink:hover .rtsOut {
+    background-position:100% -182px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsSelected,.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsSelected:hover {
+    background-position:0 -156px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsSelected .rtsOut,.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsSelected:hover .rtsOut {
+    background-position:100% -156px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsDisabled:hover {
+    background-position:0 -130px
+}
+.RadTabStripBottom_TabStripSkin .rtsLevel1 .rtsDisabled:hover .rtsOut {
+    background-position:100% -130px
+}
+.RadTabStripLeft_TabStripSkin .rtsLevel1 .rtsLink,.RadTabStripLeft_TabStripSkin .rtsLevel1 .rtsLI .rtsDisabled:hover {
+    background-position:0 0
+}
+.RadTabStripLeft_TabStripSkin .rtsLevel1 .rtsLink:hover {
+    background-position:0 -200px
+}
+.RadTabStripLeft_TabStripSkin .rtsLevel1 .rtsSelected,.RadTabStripLeft_TabStripSkin .rtsLevel1 .rtsSelected:hover {
+    background-position:0 -400px
+}
+.RadTabStripRight_TabStripSkin .rtsLevel1 .rtsLink,.RadTabStripRight_TabStripSkin .rtsLevel1 .rtsLI .rtsDisabled:hover {
+     background-position:100% 0
+}
+.RadTabStripRight_TabStripSkin .rtsLevel1 .rtsLink:hover {
+      background-position:100% -200px
+}
+.RadTabStripRight_TabStripSkin .rtsLevel1 .rtsSelected,.RadTabStripRight_TabStripSkin .rtsLevel1 .rtsSelected:hover {
+    background-position:100% -400px
+}html .RadTabStrip_TabStripSkin_disabled .rtsTxt {
+     -ms-filter:"alpha(opacity=40)";
+     filter:alpha(opacity=40)
+ }html .RadTabStrip_TabStripSkin_disabled .rtsLevel1 .rtsLink {
+    color:#9F9F9F;cursor:default
+}html .RadTabStrip_TabStripSkin_disabled .rtsLevel1 .rtsLink:hover {
+     background:transparent;
+     text-decoration:none
+}html .RadTabStrip_TabStripSkin_disabled .rtsLevel1 .rtsLink:hover .rtsOut {
+      background:transparent
+}div.RadTabStrip_TabStripSkin a.rtsLink:focus {
+       outline-color:#6f6f6f
+}div.RadTabStrip_TabStripSkin a.rtsLink:focus:after {
+     border-color:#6f6f6f \9
+ }
+ .rtsDropClueTop_TabStripSkin {
+     background-position:-10px -20px
+ }
+ .rtsDropClueRight_TabStripSkin {
+     background-position:-10px -30px
+ }
+ .rtsDropClueBottom_TabStripSkin {
+     background-position:-10px 0
+ }
+ .rtsDropClueLeft_TabStripSkin {
+     background-position:-10px -10px
+ }
+ div.RadTabStrip_TabStripSkin {
+	background-repeat: no-repeat;
+}
+ div.RadTabStrip_TabStripSkin .rtsLevel1 {
+	background-color: rgb(170, 170, 170);
+}
+ div.RadTabStrip_TabStripSkin {
+	background-color: transparent;
+}
+ div.RadTabStrip_TabStripSkin .rtsLevel1 {
+	background-image: none;
+	background-color:transparent;
+}
+ div.RadTabStrip_TabStripSkin {
+	background-color: transparent;
+}
+ div.RadTabStrip_TabStripSkin .rtsLevel1 {
+	background-color: transparent;
+}
+

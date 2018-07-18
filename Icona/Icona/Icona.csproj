@@ -1,0 +1,509 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B69FE22D-C826-4ABD-A788-91468341697C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Icona</RootNamespace>
+    <AssemblyName>Icona</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Elar.Framework.Core, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Elar.Framework.Core.1.1.3\lib\Elar.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2016.1.113.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.UI.2016.1.113.45\lib\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2016.1.113.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.Web.UI.2016.1.113.45\lib\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectionStrings.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\application_form.png" />
+    <Content Include="Images\application_form_edit.png" />
+    <Content Include="Images\computer.png" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\icons\arrow_right.png" />
+    <Content Include="Images\icons\cancel.png" />
+    <Content Include="Images\icons\comments.png" />
+    <Content Include="Images\icons\heart.png" />
+    <Content Include="Images\icons\heart_black.png" />
+    <Content Include="Images\icons\link_edit.png" />
+    <Content Include="Images\icons\newspaper.png" />
+    <Content Include="Images\link_edit.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\lock_open.png" />
+    <Content Include="Images\login_logo.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\menu\communities_24x24.png" />
+    <Content Include="Images\menu\communities_48x48.png" />
+    <Content Include="Images\newspaper.png" />
+    <Content Include="Images\script.png" />
+    <Content Include="Images\script_go.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\vcard_edit.png" />
+    <Content Include="Masterpages\Blank.Master" />
+    <Content Include="Masterpages\Main.Master" />
+    <Content Include="Masterpages\Menu.master" />
+    <None Include="Scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="Content\common.css" />
+    <Content Include="Content\controls\WebMessageBox.css" />
+    <Content Include="Content\filter.css" />
+    <Content Include="Content\grid.css" />
+    <Content Include="Content\htmlPages.css" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\main-menu.css" />
+    <Content Include="Content\tabstrips\TabStrip.TabStripSkin.css" />
+    <Content Include="Content\tabstrips\TabStrip\Level2Bg.png" />
+    <Content Include="Content\tabstrips\TabStrip\TabStripStates.png" />
+    <Content Include="Content\tabstrips\TabStrip\TabStripVStates.png" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Images\figures\gray_round_16x16.png" />
+    <Content Include="Images\figures\green_round.png" />
+    <Content Include="Images\figures\green_round_16x16.png" />
+    <Content Include="Images\figures\red_round.png" />
+    <Content Include="Images\figures\red_round_16x16.png" />
+    <Content Include="Images\icons\application_form.png" />
+    <Content Include="Images\icons\application_form_edit.png" />
+    <Content Include="Images\icons\computer.png" />
+    <Content Include="Images\icons\cross.png" />
+    <Content Include="Images\icons\lock.png" />
+    <Content Include="Images\icons\lock_open.png" />
+    <Content Include="Images\icons\script.png" />
+    <Content Include="Images\icons\script_go.png" />
+    <Content Include="Images\icons\user.png" />
+    <Content Include="Images\icons\vcard_edit.png" />
+    <Content Include="Images\menuBarL_6x31.gif" />
+    <Content Include="Images\menuBarM_1x31.gif" />
+    <Content Include="Images\menuBarR_6x31.gif" />
+    <Content Include="Images\menu\administration_48x48.png" />
+    <Content Include="Images\menu\dummy_24x24.png" />
+    <Content Include="Images\menu\dummy_48x48.png" />
+    <Content Include="Images\menu\item_background.png" />
+    <Content Include="Images\menu\item_expand_right.png" />
+    <Content Include="Images\menu\users_24x24.png" />
+    <Content Include="Images\menu\users_48x48.png" />
+    <Content Include="Images\webMessageBox\error.png" />
+    <Content Include="Images\webMessageBox\info.png" />
+    <Content Include="Images\webMessageBox\question.png" />
+    <Content Include="Images\webMessageBox\warning.png" />
+    <Content Include="Pages\Administration\Administration.aspx" />
+    <Content Include="Pages\Administration\UsersRegistry.aspx" />
+    <Content Include="Pages\Channels.aspx" />
+    <Content Include="Pages\Communities.aspx" />
+    <Content Include="Pages\Main.aspx" />
+    <Content Include="Pages\ModeratedNewsList.aspx" />
+    <Content Include="Pages\NewsList.aspx" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\controls\CookiedDropDownListControl.js" />
+    <Content Include="Scripts\controls\CookiedTextBoxControl.js" />
+    <Content Include="Scripts\controls\WebMessageBox.js" />
+    <Content Include="Scripts\filters.js" />
+    <Content Include="Scripts\jquery-2.2.4.js" />
+    <Content Include="Scripts\jquery-2.2.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\jquery.cookie-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\md5.js" />
+    <Content Include="Usercontrols\AdvancedLinkButtonControl.ascx" />
+    <Content Include="Usercontrols\ChannelControl.ascx" />
+    <Content Include="Usercontrols\CommunityControl.ascx" />
+    <Content Include="Usercontrols\CookiedControls\CookiedDropDownListControl.ascx" />
+    <Content Include="Usercontrols\CookiedControls\CookiedTextBoxControl.ascx" />
+    <Content Include="Usercontrols\FilterButton.ascx" />
+    <Content Include="Usercontrols\Menu\MainMenuControl.ascx" />
+    <Content Include="Usercontrols\Menu\TopMenuControl.ascx" />
+    <Content Include="Usercontrols\PagingControl.ascx" />
+    <Content Include="Usercontrols\SmallImageButtonControl.ascx" />
+    <Content Include="Usercontrols\ToolsContainerControl.ascx" />
+    <Content Include="Usercontrols\UserProfileControl.ascx" />
+    <Content Include="Usercontrols\WaitControl.ascx" />
+    <Content Include="Usercontrols\WebMessageBox.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Sitemaps\Menu.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\DAL\Channels.cs" />
+    <Compile Include="Logic\DAL\Communities.cs" />
+    <Compile Include="Logic\DAL\NewsItems.cs" />
+    <Compile Include="Logic\DAL\Roles.cs" />
+    <Compile Include="Logic\DAL\Security.cs" />
+    <Compile Include="Logic\DAL\Settings.cs" />
+    <Compile Include="Logic\DAL\UserProfiles.cs" />
+    <Compile Include="Logic\Entities\BaseEntity.cs" />
+    <Compile Include="Logic\Entities\Channel.cs" />
+    <Compile Include="Logic\Entities\Community.cs" />
+    <Compile Include="Logic\Entities\ListEx.cs" />
+    <Compile Include="Logic\Entities\NewsItem.cs" />
+    <Compile Include="Logic\Entities\Security\ExRole.cs" />
+    <Compile Include="Logic\Entities\UserProfile.cs" />
+    <Compile Include="Logic\Enums\ChannelTypes.cs" />
+    <Compile Include="Logic\Enums\NewsItemsStates.cs" />
+    <Compile Include="Logic\Enums\WebMessageBoxIcons.cs" />
+    <Compile Include="Logic\Extensions\ControlsExtensions.cs" />
+    <Compile Include="Logic\Extensions\PageExtensions.cs" />
+    <Compile Include="Logic\Extensions\UserExtensions.cs" />
+    <Compile Include="Logic\Filters\BaseFilter.cs" />
+    <Compile Include="Logic\Filters\ChannelsFilter.cs" />
+    <Compile Include="Logic\Filters\CommunitiesFilter.cs" />
+    <Compile Include="Logic\Filters\FilterPager.cs" />
+    <Compile Include="Logic\Filters\NewsItemsListFilter.cs" />
+    <Compile Include="Logic\Filters\UsersRegistryFilter.cs" />
+    <Compile Include="Logic\Helpers\CompressionHelper.cs" />
+    <Compile Include="Logic\Interfaces\IPaging.cs" />
+    <Compile Include="Logic\Settings\DataBaseSettings.cs" />
+    <Compile Include="Logic\UI\BaseFilteredPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logic\UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logic\UI\CookiedControlsValueManager.cs" />
+    <Compile Include="Masterpages\Blank.Master.cs">
+      <DependentUpon>Blank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Blank.Master.designer.cs">
+      <DependentUpon>Blank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\Menu.master.cs">
+      <DependentUpon>Menu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Menu.master.designer.cs">
+      <DependentUpon>Menu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\Administration.aspx.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\Administration.aspx.designer.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\UsersRegistry.aspx.cs">
+      <DependentUpon>UsersRegistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\UsersRegistry.aspx.designer.cs">
+      <DependentUpon>UsersRegistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Channels.aspx.cs">
+      <DependentUpon>Channels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Channels.aspx.designer.cs">
+      <DependentUpon>Channels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Communities.aspx.cs">
+      <DependentUpon>Communities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Communities.aspx.designer.cs">
+      <DependentUpon>Communities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModeratedNewsList.aspx.cs">
+      <DependentUpon>ModeratedNewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ModeratedNewsList.aspx.designer.cs">
+      <DependentUpon>ModeratedNewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrols\AdvancedLinkButtonControl.ascx.cs">
+      <DependentUpon>AdvancedLinkButtonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\AdvancedLinkButtonControl.ascx.designer.cs">
+      <DependentUpon>AdvancedLinkButtonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\BaseWaitControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ChannelControl.ascx.cs">
+      <DependentUpon>ChannelControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ChannelControl.ascx.designer.cs">
+      <DependentUpon>ChannelControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\CommunityControl.ascx.cs">
+      <DependentUpon>CommunityControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\CommunityControl.ascx.designer.cs">
+      <DependentUpon>CommunityControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\CookiedControls\CookiedDropDownListControl.ascx.cs">
+      <DependentUpon>CookiedDropDownListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\CookiedControls\CookiedDropDownListControl.ascx.designer.cs">
+      <DependentUpon>CookiedDropDownListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\CookiedControls\CookiedTextBoxControl.ascx.cs">
+      <DependentUpon>CookiedTextBoxControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\CookiedControls\CookiedTextBoxControl.ascx.designer.cs">
+      <DependentUpon>CookiedTextBoxControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\FilterButton.ascx.cs">
+      <DependentUpon>FilterButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\FilterButton.ascx.designer.cs">
+      <DependentUpon>FilterButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\Interfaces\IHasOnClientClickEventControl.cs" />
+    <Compile Include="Usercontrols\Interfaces\IRepeatedControlsContainer.cs" />
+    <Compile Include="Usercontrols\Menu\MainMenuControl.ascx.cs">
+      <DependentUpon>MainMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Menu\MainMenuControl.ascx.designer.cs">
+      <DependentUpon>MainMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\Menu\TopMenuControl.ascx.cs">
+      <DependentUpon>TopMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Menu\TopMenuControl.ascx.designer.cs">
+      <DependentUpon>TopMenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\PagingControl.ascx.cs">
+      <DependentUpon>PagingControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\PagingControl.ascx.designer.cs">
+      <DependentUpon>PagingControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\RepeatedControls.cs" />
+    <Compile Include="Usercontrols\SmallImageButtonControl.ascx.cs">
+      <DependentUpon>SmallImageButtonControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\SmallImageButtonControl.ascx.designer.cs">
+      <DependentUpon>SmallImageButtonControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\ToolsContainerControl.ascx.cs">
+      <DependentUpon>ToolsContainerControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ToolsContainerControl.ascx.designer.cs">
+      <DependentUpon>ToolsContainerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\UserProfileControl.ascx.cs">
+      <DependentUpon>UserProfileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\UserProfileControl.ascx.designer.cs">
+      <DependentUpon>UserProfileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\WaitControl.ascx.cs">
+      <DependentUpon>WaitControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\WaitControl.ascx.designer.cs">
+      <DependentUpon>WaitControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\WebMessageBox.ascx.cs">
+      <DependentUpon>WebMessageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\WebMessageBox.ascx.designer.cs">
+      <DependentUpon>WebMessageBox.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-2.2.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58173</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58173/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
