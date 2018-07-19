@@ -77,7 +77,7 @@
                                 </HeaderTemplate>
                                 <ItemTemplate>
                                     <uc1:SmallImageButtonControl runat="server" ID="EditChannelBtn" OnCommand="ChannelsGrid_OnCommand" ImageUrl="/images/icons/application_form_edit.png"
-                                                                 Visible="false" ToolTip="Редактировать" CommandName="get" CommandArgument='<%#Item.Id%>'/>
+                                                                 ToolTip="Редактировать" CommandName="get" CommandArgument='<%#Item.Id%>'/>
                                     <uc1:SmallImageButtonControl runat="server" ID="DeleteChannelButton" OnCommand="ChannelsGrid_OnCommand"
                                                                  ToolTip="Удалить" ImageUrl="/images/icons/cross.png"
                                                                  CommandName="delete-item" OnClientClick="return confirmChannelDelete();"

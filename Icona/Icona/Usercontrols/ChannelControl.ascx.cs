@@ -64,6 +64,7 @@ namespace Icona.Usercontrols
                 UrlTxt.Text = channel.Url;
                 AttributesTxt.Text = channel.Attributes;
                 TagsTxt.Text = channel.Tags;
+                DescriptionTxt.Text = channel.Description;
             }
             else
             {

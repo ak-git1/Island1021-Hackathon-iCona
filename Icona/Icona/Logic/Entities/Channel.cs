@@ -40,6 +40,7 @@ namespace Icona.Logic.Entities
             CommunityId = dr["CommunityId"].ToInt32();
             Title = dr["Title"].ToString();
             Description = dr["Description"].ToStr();
+            Type = dr["Type"].ToInt32();
             Url = dr["Url"].ToStr();
             Attributes = dr["Attributes"].ToStr();
             Tags = dr["Tags"].ToStr();
