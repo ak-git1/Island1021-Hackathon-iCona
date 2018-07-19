@@ -103,6 +103,7 @@
     <Content Include="Images\icons\users_24x24.png" />
     <Content Include="Images\icons\users_48x48.png" />
     <Content Include="Images\link_edit.png" />
+    <Content Include="Images\loader.gif" />
     <Content Include="Images\lock.png" />
     <Content Include="Images\lock_open.png" />
     <Content Include="Images\login_logo.png" />
