@@ -78,7 +78,7 @@ namespace Icona.Pages
                 {
                     CommunityId = Request["CommunityId"].ToInt32(null);
                     Community community = Community.Get(CommunityId.Value);
-                    HeaderLbl.Text = $"Каналы сообщества: {community.Name}";
+                    HeaderLbl.Text = $"Каналы сообщества: '{community.Name}'";
                     FillGrid();
                 }
                 else

@@ -10,7 +10,7 @@
 
 <asp:Content ContentPlaceHolderID="MainPlaceHolder" runat="server">
     <div class="main-container">
-        <h1>Список новостей</h1>
+        <h1><asp:Label runat="server" ID="HeaderLbl" /></h1>
         <div class="grid-container">
             <uc1:ToolsContainerControl runat="server" ID="ToolsContainerControl" OnPageChanged="Reload" OnClearFilter="ClearFilterBtn_OnClick" OnApplyFilter="ApplyFilterBtn_OnClick">
                 <FilterLeftColumnTemplateControls>
@@ -42,7 +42,7 @@
                                     Название
                                 </HeaderTemplate>
                                 <ItemTemplate>
-                                    <uc1:AdvancedLinkButtonControl ID="NewsItemLnk" CssClass="name" ToolTip="Перейти по ссылке к новости"
+                                    <uc1:AdvancedLinkButtonControl ID="NewsItemLnk" CssClass="name" ToolTip="Перейти по ссылке к новости" runat="server"
                                                                    Text="<%#Item.Title%>" DestinationUrl='<%#Item.Url %>' />
                                     <%# Item.Description.TruncateString(255) %>
                                 </ItemTemplate>

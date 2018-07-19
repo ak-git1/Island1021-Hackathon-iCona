@@ -34,6 +34,7 @@ namespace Icona.Logic.DAL
         {
             Database db = (new DatabaseProviderFactory()).CreateDefault();
             DbCommand command = db.GetStoredProcCommand("p_NewsItems_GetList",
+                f.CommunityId,
                 f.Title.Trim(),
                 f.DateFrom,
                 f.DateTill,

@@ -49,8 +49,8 @@
                                     Название
                                 </HeaderTemplate>
                                 <ItemTemplate>
-                                    <uc1:AdvancedLinkButtonControl ID="CommunityLnk" CssClass="name" ToolTip="Перейти к новостям сообщества"
-                                                                   Text="<%#Item.Name%>" DestinationUrl='<%#$"/Pages/NewsList.aspx?CommunityId={Item.Id}" %>' />
+                                    <uc1:AdvancedLinkButtonControl ID="CommunityLnk" CssClass="name" ToolTip="Перейти к новостям сообщества" runat="server"
+                                                                   Text="<%#Item.Name%>"  DestinationUrl='<%#$"/Pages/NewsList.aspx?CommunityId={Item.Id}" %>' />
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="150px">

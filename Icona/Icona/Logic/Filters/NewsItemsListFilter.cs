@@ -5,6 +5,8 @@ namespace Icona.Logic.Filters
 {
     public class NewsItemsListFilter : BaseFilter
     {
+        public int CommunityId { get; set; }
+
         public string Title { get; set; }
 
         /// <summary>
