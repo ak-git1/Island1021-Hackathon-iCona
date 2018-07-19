@@ -12,7 +12,7 @@ namespace Icona.Logic.DAL
     /// <summary>
     /// Работа с новостями
     /// </summary>
-    public class NewsItems
+    public static class NewsItems
     {
         public static void UpdateState(Guid id, NewsItemsStates state)
         {

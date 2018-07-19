@@ -8,7 +8,7 @@ namespace Icona.Logic.DAL
     /// <summary>
     /// Работа с настройками
     /// </summary>
-    public class Settings
+    public static class Settings
     {
         /// <summary>
         /// Получение значения параметра настроек

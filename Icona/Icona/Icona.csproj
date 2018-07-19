@@ -96,10 +96,12 @@
     <Content Include="Images\icons\arrow_right.png" />
     <Content Include="Images\icons\cancel.png" />
     <Content Include="Images\icons\comments.png" />
-    <Content Include="Images\icons\heart.png" />
-    <Content Include="Images\icons\heart_black.png" />
+    <Content Include="Images\icons\emoticon_happy.png" />
+    <Content Include="Images\icons\emoticon_unhappy.png" />
     <Content Include="Images\icons\link_edit.png" />
     <Content Include="Images\icons\newspaper.png" />
+    <Content Include="Images\icons\users_24x24.png" />
+    <Content Include="Images\icons\users_48x48.png" />
     <Content Include="Images\link_edit.png" />
     <Content Include="Images\lock.png" />
     <Content Include="Images\lock_open.png" />
@@ -107,6 +109,8 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\menu\communities_24x24.png" />
     <Content Include="Images\menu\communities_48x48.png" />
+    <Content Include="Images\menu\tagsStatistics_24x24.png" />
+    <Content Include="Images\menu\tagsStatistics_48x48.png" />
     <Content Include="Images\newspaper.png" />
     <Content Include="Images\script.png" />
     <Content Include="Images\script_go.png" />
@@ -198,6 +202,7 @@
     <Content Include="Images\webMessageBox\question.png" />
     <Content Include="Images\webMessageBox\warning.png" />
     <Content Include="Pages\Administration\Administration.aspx" />
+    <Content Include="Pages\Administration\TagsStatistics.aspx" />
     <Content Include="Pages\Administration\UsersRegistry.aspx" />
     <Content Include="Pages\Channels.aspx" />
     <Content Include="Pages\Communities.aspx" />
@@ -247,6 +252,7 @@
     <Compile Include="Logic\DAL\Roles.cs" />
     <Compile Include="Logic\DAL\Security.cs" />
     <Compile Include="Logic\DAL\Settings.cs" />
+    <Compile Include="Logic\DAL\TagsStatistics.cs" />
     <Compile Include="Logic\DAL\UserProfiles.cs" />
     <Compile Include="Logic\Entities\BaseEntity.cs" />
     <Compile Include="Logic\Entities\Channel.cs" />
@@ -254,6 +260,7 @@
     <Compile Include="Logic\Entities\ListEx.cs" />
     <Compile Include="Logic\Entities\NewsItem.cs" />
     <Compile Include="Logic\Entities\Security\ExRole.cs" />
+    <Compile Include="Logic\Entities\TagsStatisticsItem.cs" />
     <Compile Include="Logic\Entities\UserProfile.cs" />
     <Compile Include="Logic\Enums\ChannelTypes.cs" />
     <Compile Include="Logic\Enums\NewsItemsStates.cs" />
@@ -266,6 +273,7 @@
     <Compile Include="Logic\Filters\CommunitiesFilter.cs" />
     <Compile Include="Logic\Filters\FilterPager.cs" />
     <Compile Include="Logic\Filters\NewsItemsListFilter.cs" />
+    <Compile Include="Logic\Filters\TagsStatisticsFilter.cs" />
     <Compile Include="Logic\Filters\UsersRegistryFilter.cs" />
     <Compile Include="Logic\Helpers\CompressionHelper.cs" />
     <Compile Include="Logic\Interfaces\IPaging.cs" />
@@ -304,6 +312,13 @@
     </Compile>
     <Compile Include="Pages\Administration\Administration.aspx.designer.cs">
       <DependentUpon>Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Administration\TagsStatistics.aspx.cs">
+      <DependentUpon>TagsStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Administration\TagsStatistics.aspx.designer.cs">
+      <DependentUpon>TagsStatistics.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Administration\UsersRegistry.aspx.cs">
       <DependentUpon>UsersRegistry.aspx</DependentUpon>

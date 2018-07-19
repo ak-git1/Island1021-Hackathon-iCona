@@ -10,7 +10,9 @@
     <siteMapNode  title="Администрирование" icon="/images/menu/administration_{0}.png" url="~/Pages/Administration/Administration.aspx"    
                   description="Управление пользователями системы. Управление настройками системы.">
       <siteMapNode  url="~/Pages/Administration/UsersRegistry.aspx" title="Пользователи" icon="/images/menu/users_{0}.png"
-                    description="Управление пользователями системы. Создание учетных записей. Разграничение прав доступа." />    
+                    description="Управление пользователями системы. Создание учетных записей. Разграничение прав доступа." />
+      <siteMapNode  url="~/Pages/Administration/TagsStatistics.aspx" title="Статистика использования тегов" icon="/images/menu/tagsStatistics_{0}.png"
+                    description="Просмотр статистки по использованию тегов." />
     </siteMapNode>
 
   </siteMapNode>

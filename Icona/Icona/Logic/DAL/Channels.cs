@@ -11,7 +11,7 @@ namespace Icona.Logic.DAL
     /// <summary>
     /// Работа с новостными каналами
     /// </summary>
-    public class Channels
+    public static class Channels
     {
         public static int Add(Channel channel)
         {

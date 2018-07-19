@@ -51,9 +51,10 @@
                                     Название
                                 </HeaderTemplate>
                                 <ItemTemplate>
-                                    <uc1:AdvancedLinkButtonControl ID="NewsItemLnk" CssClass="name" ToolTip="Перейти по ссылке к новости" runat="server"
-                                                                   Text="<%#Item.Title%>" DestinationUrl='<%#Item.Url %>' />
-                                    <%# Item.Description.TruncateString(255) %>
+                                    <asp:LinkButton runat="server" Text="<%#Item.Title%>" PostBackUrl="<%#Item.Url%>" CssClass="name" ToolTip="Перейти по ссылке к новости" /> 
+                                    <div class="description">
+                                        <%# Item.Description.TruncateString(255) %>
+                                    </div>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="150px">
@@ -69,9 +70,16 @@
                                     Действие
                                 </HeaderTemplate>
                                 <ItemTemplate>
-                                    <uc1:SmallImageButtonControl runat="server" ID="PublishBtn" OnCommand="NewsItemsGrid_OnCommand" ImageUrl="/images/icons/application_form_edit.png"
+                                    <uc1:SmallImageButtonControl runat="server" ID="LikeBtn" OnCommand="NewsItemsGrid_OnCommand" ImageUrl="/images/icons/emoticon_happy.png"
+                                                                 ToolTip="Нравится" CommandName="like" CommandArgument='<%#Item.Id%>'/>
+                                    <uc1:SmallImageButtonControl runat="server" ID="DislikeBtn" ImageUrl="/images/icons/emoticon_unhappy.png" OnCommand="NewsItemsGrid_OnCommand"
+                                                                 ToolTip="Не нравится" CommandName="dislike" CommandArgument='<%#Item.Id%>'/>
+                                    <uc1:SmallImageButtonControl runat="server" ID="CommentsBtn" OnCommand="NewsItemsGrid_OnCommand"
+                                                                 ToolTip="Комментарии" ImageUrl="/images/icons/comments.png"
+                                                                 CommandName="comment" CommandArgument='<%#Item.Id%>'/>
+                                    <uc1:SmallImageButtonControl runat="server" ID="PublishBtn" OnCommand="NewsItemsGrid_OnCommand" ImageUrl="/images/icons/arrow_right.png"
                                                                  Visible="false" ToolTip="Согласовать" CommandName="publish" CommandArgument='<%#Item.Id%>'/>
-                                    <uc1:SmallImageButtonControl runat="server" ID="DeclineBtn" ImageUrl="/images/icons/link_edit.png" OnCommand="NewsItemsGrid_OnCommand"
+                                    <uc1:SmallImageButtonControl runat="server" ID="DeclineBtn" ImageUrl="/images/icons/cancel.png" OnCommand="NewsItemsGrid_OnCommand"
                                                                  Visible="True" ToolTip="Отклонить" CommandName="decline" CommandArgument='<%#Item.Id%>'/>
                                     <uc1:SmallImageButtonControl runat="server" ID="DeleteButton" OnCommand="NewsItemsGrid_OnCommand"
                                                                  ToolTip="Удалить" ImageUrl="/images/icons/cross.png"

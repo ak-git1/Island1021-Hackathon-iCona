@@ -11,7 +11,7 @@ namespace Icona.Logic.DAL
     /// <summary>
     /// Работа с сообществами
     /// </summary>
-    public class Communities
+    public static class Communities
     {
         public static int Add(Community community)
         {

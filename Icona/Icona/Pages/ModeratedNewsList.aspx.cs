@@ -137,6 +137,7 @@ namespace Icona.Pages
                     try
                     {
                         NewsItem.UpdateState(nodeId, NewsItemsStates.Published);
+                        FillGrid();
                     }
                     catch (Exception exc)
                     {
@@ -152,6 +153,7 @@ namespace Icona.Pages
                     try
                     {
                         NewsItem.UpdateState(nodeId, NewsItemsStates.Declined);
+                        FillGrid();
                     }
                     catch (Exception exc)
                     {
