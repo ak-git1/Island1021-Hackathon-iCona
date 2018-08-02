@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Модерирование списка новостей" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="ModeratedNewsList.aspx.cs" Inherits="Icona.Pages.ModeratedNewsList" %>
 
-<%@ Import Namespace="Elar.Framework.Core.Extensions" %>
+<%@ Import Namespace="Ak.Framework.Core.Extensions" %>
 
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/SmallImageButtonControl.ascx" TagName="SmallImageButtonControl" TagPrefix="uc1" %>

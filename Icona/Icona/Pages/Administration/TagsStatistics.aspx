@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Статистика использования тегов" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="TagsStatistics.aspx.cs" Inherits="Icona.Pages.Administration.TagsStatistics" %>
 
-<%@ Import Namespace="Elar.Framework.Core.Extensions" %>
+<%@ Import Namespace="Ak.Framework.Core.Extensions" %>
 
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/ToolsContainerControl.ascx" TagPrefix="uc1" TagName="ToolsContainerControl" %>

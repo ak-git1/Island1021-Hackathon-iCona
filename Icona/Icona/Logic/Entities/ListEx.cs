@@ -4,8 +4,8 @@ using System.Data;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using Elar.Framework.Core.Extensions;
-using Elar.Framework.Core.Helpers;
+using Ak.Framework.Core.Extensions;
+using Ak.Framework.Core.Helpers;
 
 namespace Icona.Logic.Entities
 {

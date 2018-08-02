@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Web;
-using Elar.Framework.Core.Extensions;
+﻿using System.Data;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.DAL;
 using Icona.Logic.Filters;
 
@@ -38,6 +34,7 @@ namespace Icona.Logic.Entities
             ChannelName = dr["ChannelName"].ToStr();
             PublishedNewsQuantity = dr["PublishedNewsQuantity"].ToInt32();
             NegativeVotesQuantity = dr["NegativeVotesQuantity"].ToInt32();
+            PositiveVotesQuantity = dr["PositiveVotesQuantity"].ToInt32();
             CommentsQuantity = dr["CommentsQuantity"].ToInt32();
             ViewsQuantity = dr["ViewsQuantity"].ToInt32();
         }

@@ -5,6 +5,24 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Icona", "Icona\Icona.csproj", "{B69FE22D-C826-4ABD-A788-91468341697C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Icona.ChannelsDownloading.App", "Icona.ChannelsDownloading.App\Icona.ChannelsDownloading.App.csproj", "{917FF5AA-1139-445B-8AD1-3E6CD287C04E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B69FE22D-C826-4ABD-A788-91468341697C} = {B69FE22D-C826-4ABD-A788-91468341697C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{EFF5E1AB-3555-4AF1-B6EF-1750F52ABA3C}"
+	ProjectSection(SolutionItems) = preProject
+		Design\iCona banner 1870x5030.png = Design\iCona banner 1870x5030.png
+		Design\iCona banner 6350x650.png = Design\iCona banner 6350x650.png
+		Design\iCona banner 635x65.png = Design\iCona banner 635x65.png
+		Design\iCona banner 87x503.png = Design\iCona banner 87x503.png
+		Design\iCona logo sqr.png = Design\iCona logo sqr.png
+		Design\iCona logo sqr_2.png = Design\iCona logo sqr_2.png
+		Design\icona.ico = Design\icona.ico
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Icona.Common", "Icona.Common\Icona.Common.csproj", "{025B8F72-B0F7-4013-AB7D-818106E28A29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +33,20 @@ Global
 		{B69FE22D-C826-4ABD-A788-91468341697C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B69FE22D-C826-4ABD-A788-91468341697C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B69FE22D-C826-4ABD-A788-91468341697C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917FF5AA-1139-445B-8AD1-3E6CD287C04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917FF5AA-1139-445B-8AD1-3E6CD287C04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917FF5AA-1139-445B-8AD1-3E6CD287C04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917FF5AA-1139-445B-8AD1-3E6CD287C04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{025B8F72-B0F7-4013-AB7D-818106E28A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025B8F72-B0F7-4013-AB7D-818106E28A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025B8F72-B0F7-4013-AB7D-818106E28A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025B8F72-B0F7-4013-AB7D-818106E28A29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 		SolutionGuid = {C4421D68-2DD5-4FF1-8E51-B0BE0D47E223}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="Новостные каналы" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="Channels.aspx.cs" Inherits="Icona.Pages.Channels" %>
 
-<%@ Import Namespace="Icona.Usercontrols" %>
-<%@ Import Namespace="Elar.Framework.Core.Helpers" %>
-<%@ Import Namespace="Icona.Logic.Enums" %>
+<%@ Import Namespace="Icona.Common.Enums" %>
+<%@ Import Namespace="Ak.Framework.Core.Helpers" %>
 
 <%@ Register Src="~/Usercontrols/ChannelControl.ascx" TagName="ChannelControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>

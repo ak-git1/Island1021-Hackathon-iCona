@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.Common;
+using Icona.Logic.Contracts;
 using Icona.Logic.Entities;
 using Icona.Logic.Enums;
 using Icona.Logic.Filters;
@@ -14,6 +15,14 @@ namespace Icona.Logic.DAL
     /// </summary>
     public static class NewsItems
     {
+        public static void Add(NewsItemContract item)
+        {
+            Database db = new DatabaseProviderFactory().CreateDefault();
+            DbCommand command = db.GetStoredProcCommand("p_NewsItems_Add", item.ChannelId, item.Title, item.Description, item.Text, item.Url, item.Date);
+            command.CommandTimeout = DataBaseSettings.SqlCommandTimeout;
+            db.ExecuteNonQuery(command);
+        }
+
         public static void UpdateState(Guid id, NewsItemsStates state)
         {
             Database db = new DatabaseProviderFactory().CreateDefault();

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Список сообществ" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="Communities.aspx.cs" Inherits="Icona.Pages.Communities" %>
 
-<%@ Import Namespace="Elar.Framework.Core.Extensions" %>
+<%@ Import Namespace="Ak.Framework.Core.Extensions" %>
 
 <%@ Register Src="~/Usercontrols/CommunityControl.ascx" TagName="CommunityControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Управление пользователями" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="UsersRegistry.aspx.cs" Inherits="Icona.Pages.Administration.UsersRegistry" %>
 
-<%@ Import Namespace="Elar.Framework.Core.Extensions" %>
+<%@ Import Namespace="Ak.Framework.Core.Extensions" %>
 
 <%@ Register Src="~/Usercontrols/UserProfileControl.ascx" TagName="UserProfilesControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>

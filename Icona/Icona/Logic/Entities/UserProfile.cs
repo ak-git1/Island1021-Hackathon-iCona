@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web.Security;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.DAL;
 using Icona.Logic.Entities.Security;
 using Icona.Logic.Filters;

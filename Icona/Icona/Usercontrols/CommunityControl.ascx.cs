@@ -1,5 +1,5 @@
 ﻿using System;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.Entities;
 using Icona.Logic.Extensions;
 

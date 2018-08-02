@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.Entities.Security;
 using Icona.Logic.Settings;
 using Microsoft.Practices.EnterpriseLibrary.Data;

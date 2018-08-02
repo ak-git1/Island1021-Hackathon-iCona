@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Icona.Logic.Enums
+namespace Icona.Common.Enums
 {
     /// <summary>
     /// Типы каналов

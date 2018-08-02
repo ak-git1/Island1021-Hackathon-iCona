@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.DAL;
 using Icona.Logic.Filters;
 

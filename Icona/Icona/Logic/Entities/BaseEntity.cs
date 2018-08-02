@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Data;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 
 namespace Icona.Logic.Entities
 {
     /// <summary>
     /// Базовая сущность
     /// </summary>
-    [Serializable]
+    [Serializable]    
     public abstract class BaseEntity
     {
         #region Свойства

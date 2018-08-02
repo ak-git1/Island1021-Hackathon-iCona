@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
+using Icona.Logic.Contracts;
 using Icona.Logic.DAL;
 using Icona.Logic.Enums;
 using Icona.Logic.Filters;
@@ -21,6 +22,8 @@ namespace Icona.Logic.Entities
         public string Description { get; set; }
 
         public string Url { get; set; }
+
+        public string Text { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -54,6 +57,11 @@ namespace Icona.Logic.Entities
         public static ListEx<NewsItem> GetList(NewsItemsListFilter f)
         {
             return NewsItems.GetList(f);
+        }
+
+        public static void Add(NewsItemContract item)
+        {
+            NewsItems.Add(item);
         }
     }
 }

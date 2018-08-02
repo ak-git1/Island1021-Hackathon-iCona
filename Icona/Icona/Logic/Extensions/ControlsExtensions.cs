@@ -6,8 +6,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using AjaxControlToolkit;
-using Elar.Framework.Core.Extensions;
-using Elar.Framework.Core.Helpers;
+using Ak.Framework.Core.Extensions;
+using Ak.Framework.Core.Helpers;
 using Telerik.Web.UI;
 
 namespace Icona.Logic.Extensions
@@ -147,7 +147,7 @@ namespace Icona.Logic.Extensions
         public static void AddToCookie(this UserControl uc, string name, string value)
         {
             name = String.Format("{0}_{1}_{2}", uc.Request.Path.Replace("/", "_"), uc.ClientID, name);
-            name = name.ToMD5();
+            name = name.ToMd5();
             HttpCookie cookie = new HttpCookie(name, value)
                                     {
                                         Expires = DateTime.Now.AddDays(30)
@@ -179,7 +179,7 @@ namespace Icona.Logic.Extensions
         public static string GetFromCookie(this Control control, HttpRequest request, string name)
         {
             string s = $"{request.Path.Replace("/", "_")}_{control.ClientID}_{name}";
-            s = s.ToMD5();
+            s = s.ToMd5();
             HttpCookie cookie = request.Cookies.Get(s);
             return (cookie != null) ? (cookie.Value ?? string.Empty).UrlDecode() : string.Empty;
         }

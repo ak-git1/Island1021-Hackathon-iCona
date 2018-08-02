@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Список новостей" Language="C#" MasterPageFile="~/Masterpages/Main.Master" AutoEventWireup="true" CodeBehind="NewsList.aspx.cs" Inherits="Icona.Pages.NewsList" %>
 
-<%@ Import Namespace="Elar.Framework.Core.Extensions" %>
+<%@ Import Namespace="Ak.Framework.Core.Extensions" %>
 
 <%@ Register Src="~/Usercontrols/WaitControl.ascx" TagName="WaitControl" TagPrefix="uc1" %>
 <%@ Register Src="~/Usercontrols/SmallImageButtonControl.ascx" TagName="SmallImageButtonControl" TagPrefix="uc1" %>

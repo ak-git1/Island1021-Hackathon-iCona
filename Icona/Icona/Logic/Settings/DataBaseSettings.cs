@@ -1,5 +1,5 @@
 ﻿using System.Configuration;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 
 namespace Icona.Logic.Settings
 {

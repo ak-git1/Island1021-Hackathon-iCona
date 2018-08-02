@@ -1,5 +1,8 @@
-﻿using System.Data;
-using Elar.Framework.Core.Extensions;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using Ak.Framework.Core.Extensions;
+using Icona.Common.Enums;
 using Icona.Logic.DAL;
 using Icona.Logic.Filters;
 
@@ -16,13 +19,15 @@ namespace Icona.Logic.Entities
 
         public string Description { get; set; }
 
-        public int Type { get; set; }
+        public ChannelTypes Type { get; set; }
 
         public string Url { get; set; }
 
         public string Attributes { get; set; }
 
         public string Tags { get; set; }
+
+        public DateTime? LastSynchronizationDate { get; set; }
 
         /// <summary>
         /// Конструктор
@@ -40,10 +45,11 @@ namespace Icona.Logic.Entities
             CommunityId = dr["CommunityId"].ToInt32();
             Title = dr["Title"].ToString();
             Description = dr["Description"].ToStr();
-            Type = dr["Type"].ToInt32();
+            Type = dr["Type"].ToEnum<ChannelTypes>();
             Url = dr["Url"].ToStr();
             Attributes = dr["Attributes"].ToStr();
             Tags = dr["Tags"].ToStr();
+            LastSynchronizationDate = dr["LastSynchronizationDate"].ToDateTime();
         }
 
         public static int Add(Channel channel)
@@ -69,6 +75,16 @@ namespace Icona.Logic.Entities
         public static ListEx<Channel> GetList(ChannelsFilter f)
         {
             return Channels.GetList(f);
+        }
+
+        public static List<Channel> GetAllList()
+        {
+            return Channels.GetAllList();
+        }
+
+        public void UpdateSynchronizationDate()
+        {
+            Channels.UpdateSynchronizationDate(Id);
         }
     }
 }

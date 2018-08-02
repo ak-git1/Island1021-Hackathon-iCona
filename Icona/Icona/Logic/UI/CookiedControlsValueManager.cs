@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using Elar.Framework.Core.Extensions;
+using Ak.Framework.Core.Extensions;
 using Icona.Logic.Helpers;
 using Newtonsoft.Json;
 
@@ -98,7 +98,7 @@ namespace Icona.Logic.UI
             lock (locker)
             {
                 string pageName = userControl.Request.Url.AbsolutePath.Replace("/", "_");
-                string keyName = $"{userControl.ClientID.ToMD5()}_{key}";
+                string keyName = $"{userControl.ClientID.ToMd5()}_{key}";
                 string cookieContent = GetCachedItem(userControl);
 
                 CookiedControlsGroup groupValue = (string.IsNullOrEmpty(cookieContent))
@@ -158,7 +158,7 @@ namespace Icona.Logic.UI
             lock (locker)
             {
                 string pageName = userControl.Request.Url.AbsolutePath.Replace("/", "_");
-                string keyName = $"{userControl.ClientID.ToMD5()}_{key}";
+                string keyName = $"{userControl.ClientID.ToMd5()}_{key}";
                 HttpCookie cookie = userControl.Request.Cookies[pageName];
              
                 CookiedControlsGroup groupValue = (string.IsNullOrEmpty(cookie?.Value))

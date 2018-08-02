@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,8 +48,8 @@
     <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
-    <Reference Include="Elar.Framework.Core, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Elar.Framework.Core.1.1.3\lib\Elar.Framework.Core.dll</HintPath>
+    <Reference Include="Ak.Framework.Core, Version=1.0.1.0, Culture=neutral, PublicKeyToken=42ef31747320a29d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ak.Framework.Core.1.0.1\lib\Ak.Framework.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -63,6 +64,8 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -120,6 +123,7 @@
     <Content Include="Masterpages\Blank.Master" />
     <Content Include="Masterpages\Main.Master" />
     <Content Include="Masterpages\Menu.master" />
+    <None Include="Properties\PublishProfiles\Publish on Disk D.pubxml" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Content\common.css" />
     <Content Include="Content\controls\WebMessageBox.css" />
@@ -222,6 +226,7 @@
     <Content Include="Scripts\jquery.cookie-1.4.1.min.js" />
     <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Scripts\md5.js" />
+    <Content Include="Services\ChannelsService.svc" />
     <Content Include="Usercontrols\AdvancedLinkButtonControl.ascx" />
     <Content Include="Usercontrols\ChannelControl.ascx" />
     <Content Include="Usercontrols\CommunityControl.ascx" />
@@ -247,6 +252,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Contracts\ChannelContract.cs" />
+    <Compile Include="Logic\Contracts\NewsItemContract.cs" />
+    <Compile Include="Logic\Entities\BaseEntity.cs" />
     <Compile Include="Logic\DAL\Channels.cs" />
     <Compile Include="Logic\DAL\Communities.cs" />
     <Compile Include="Logic\DAL\NewsItems.cs" />
@@ -255,7 +263,6 @@
     <Compile Include="Logic\DAL\Settings.cs" />
     <Compile Include="Logic\DAL\TagsStatistics.cs" />
     <Compile Include="Logic\DAL\UserProfiles.cs" />
-    <Compile Include="Logic\Entities\BaseEntity.cs" />
     <Compile Include="Logic\Entities\Channel.cs" />
     <Compile Include="Logic\Entities\Community.cs" />
     <Compile Include="Logic\Entities\ListEx.cs" />
@@ -263,7 +270,6 @@
     <Compile Include="Logic\Entities\Security\ExRole.cs" />
     <Compile Include="Logic\Entities\TagsStatisticsItem.cs" />
     <Compile Include="Logic\Entities\UserProfile.cs" />
-    <Compile Include="Logic\Enums\ChannelTypes.cs" />
     <Compile Include="Logic\Enums\NewsItemsStates.cs" />
     <Compile Include="Logic\Enums\WebMessageBoxIcons.cs" />
     <Compile Include="Logic\Extensions\ControlsExtensions.cs" />
@@ -364,6 +370,9 @@
       <DependentUpon>NewsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ChannelsService.svc.cs">
+      <DependentUpon>ChannelsService.svc</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\AdvancedLinkButtonControl.ascx.cs">
       <DependentUpon>AdvancedLinkButtonControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -482,7 +491,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Icona.Common\Icona.Common.csproj">
+      <Project>{025b8f72-b0f7-4013-ab7d-818106e28a29}</Project>
+      <Name>Icona.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

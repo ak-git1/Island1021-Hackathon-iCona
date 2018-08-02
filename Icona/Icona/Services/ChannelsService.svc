@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Icona.Services.ChannelsService" CodeBehind="ChannelsService.svc.cs" %>

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Elar.Framework.Core.Extensions;
-using Elar.Framework.Core.Helpers;
+using Ak.Framework.Core.Extensions;
+using Ak.Framework.Core.Helpers;
+using Icona.Common.Enums;
 using Icona.Logic.Entities;
 using Icona.Logic.Enums;
 using Icona.Logic.Extensions;
@@ -60,7 +61,7 @@ namespace Icona.Usercontrols
             {
                 Channel channel = Channel.Get(id.Value);
                 NameTxt.Text = channel.Title;
-                TypesDdl.SetSelectedValue(channel.Type);
+                TypesDdl.SetSelectedValue((int)channel.Type);
                 UrlTxt.Text = channel.Url;
                 AttributesTxt.Text = channel.Attributes;
                 TagsTxt.Text = channel.Tags;
@@ -107,7 +108,7 @@ namespace Icona.Usercontrols
                 {
                     Channel channel = Channel.Get(ChannelId.Value);
                     channel.Title = NameTxt.Text;
-                    channel.Type = TypesDdl.SelectedItem.Value.ToInt32();
+                    channel.Type = TypesDdl.SelectedItem.Value.ToEnum<ChannelTypes>();
                     channel.Url = UrlTxt.Text;
                     channel.Attributes = AttributesTxt.Text;
                     channel.Tags = TagsTxt.Text;
@@ -120,7 +121,7 @@ namespace Icona.Usercontrols
                     {
                         CommunityId = CommunityId.Value,                
                         Title = NameTxt.Text,
-                        Type = TypesDdl.SelectedItem.Value.ToInt32(),
+                        Type = TypesDdl.SelectedItem.Value.ToEnum<ChannelTypes>(),
                         Url = UrlTxt.Text,
                         Attributes = AttributesTxt.Text,
                         Tags = TagsTxt.Text,

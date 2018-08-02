@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using Icona.Logic.Entities;
@@ -30,7 +31,7 @@ namespace Icona.Logic.DAL
 
         public static void Update(Channel channel)
         {
-            Database db = (new DatabaseProviderFactory()).CreateDefault();
+            Database db = new DatabaseProviderFactory().CreateDefault();
             DbCommand command = db.GetStoredProcCommand("p_Channels_Update", 
                                                                                 channel.Id,
                                                                                 channel.Title,
@@ -39,6 +40,14 @@ namespace Icona.Logic.DAL
                                                                                 channel.Url,
                                                                                 channel.Attributes,
                                                                                 channel.Tags);
+            command.CommandTimeout = DataBaseSettings.SqlCommandTimeout;
+            db.ExecuteNonQuery(command);
+        }
+
+        public static void UpdateSynchronizationDate(int channelId)
+        {
+            Database db = (new DatabaseProviderFactory()).CreateDefault();
+            DbCommand command = db.GetStoredProcCommand("p_Channels_UpdateSynchronizationDate", channelId);
             command.CommandTimeout = DataBaseSettings.SqlCommandTimeout;
             db.ExecuteNonQuery(command);
         }
@@ -68,7 +77,7 @@ namespace Icona.Logic.DAL
 
         public static ListEx<Channel> GetList(ChannelsFilter f)
         {
-            Database db = (new DatabaseProviderFactory()).CreateDefault();
+            Database db = new DatabaseProviderFactory().CreateDefault();
             DbCommand command = db.GetStoredProcCommand("p_Channels_GetList",
                 f.CommunityId,
                 f.Name.Trim(),
@@ -79,6 +88,15 @@ namespace Icona.Logic.DAL
             {
                 return new ListEx<Channel>(r, x => new Channel(x));
             }
+        }
+
+        public static ListEx<Channel> GetAllList()
+        {
+            Database db = new DatabaseProviderFactory().CreateDefault();
+            DbCommand command = db.GetStoredProcCommand("p_Channels_GetAllList");
+            command.CommandTimeout = DataBaseSettings.SqlCommandTimeout;
+            using (IDataReader r = db.ExecuteReader(command))
+                return new ListEx<Channel>(r, x => new Channel(x));
         }
     }
 }
