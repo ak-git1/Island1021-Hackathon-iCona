@@ -38,7 +38,7 @@ namespace Icona.ChannelsDownloading.App.Logic.ChannelsProcessors
             List<NewsItemContract> filteredItems = new List<NewsItemContract>();
 
             // Очень упрощенная фильтрация, может давать ложноположительные результаты
-            foreach (NewsItemContract item in NewsItems)
+            foreach (NewsItemContract item in NewsItems.WhereEx(n => n.Date >= Channel.LastSynchronizationDate))
             {
                 foreach (string tag in _tags)
                 {
