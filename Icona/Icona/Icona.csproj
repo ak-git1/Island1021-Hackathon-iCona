@@ -123,6 +123,7 @@
     <Content Include="Masterpages\Blank.Master" />
     <Content Include="Masterpages\Main.Master" />
     <Content Include="Masterpages\Menu.master" />
+    <None Include="Properties\PublishProfiles\icona-test - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Publish on Disk D.pubxml" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Content\common.css" />
